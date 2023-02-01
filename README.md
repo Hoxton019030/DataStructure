@@ -123,3 +123,13 @@ keyword = ["資料結構"]
        1. Root Level = 1; 
        2. 若 Parent 之 level=i，則it children level = i+1
 
+  8. Tree's Degree：MAx{Node's Degree}
+
+     eg. Tree's Degree = 3
+
+  9. Tree's Height (or Depth) ：Max{Node's Level}
+
+     eg. Tree高度=3(假設root為1)
+
+  10. **Forest(森林)**：由≥0棵互斥Trees所形成之集合，**Forest可以為空**
+
