@@ -133,3 +133,21 @@ keyword = ["資料結構"]
 
   10. **Forest(森林)**：由≥0棵互斥Trees所形成之集合，**Forest可以為空**
 
+## Tree的表示方式
+
+方法一：LinkedList直接表示
+
+作法：假設Tree's Degree=K，Node數=n，則Node Structure如下
+
+![image-20230201224708128](https://i.imgur.com/jCq1OHY.png)
+
+分析：
+
+**缺點:極度浪費Link空間**，共準備n*K條Link，**☆☆☆☆☆有用的非Nil之Link有n-1條☆☆☆☆☆**(扣掉樹根不用，概念類似相通的無向圖)，所以Nil Links(浪費的)有nk-(n-1)條，因為浪費比例
+
+
+$$
+\frac{n*k-(n-1)}{n*k} = \frac{nk-n+1}{nk}=\frac{k-1}{k} =0.99
+$$
+
+
