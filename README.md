@@ -32,6 +32,40 @@ keyword = ["資料結構"]
 
 
 
+# Ch1 Algorith, Recursion and Performance Analysis
+
+> Algo定義(5個Criteria)
+>
+> Recursion(遞迴)☆☆☆☆☆
+>
+> > 定義
+> >
+> > 種類
+> >
+> > 與 Non-Recursion比較考型及來源
+>
+> 效能分析
+>
+> > Space(較少考)
+> >
+> > Time(較常考)☆☆☆☆☆
+
+
+
+## Algorithm(演算法)
+
++ 定義：為了解決特定問題之有限個敘述／步驟／指令所構成之集合，且必須滿足下列**５**個Criteria：
+
+1. Input：輸入的資料量>=0個即可
+2. Output：至少要有>=1個輸出量
+3. Definiteness(明確性)：每個敘述／步驟／指令必須是Clear且unambiauous(不可混淆不清)。`3之要求在於Algo之寫作格式無一致標準之規範 `
+4. Finiteness(有限性)：必須在執行／追蹤有限個步驟後，必能夠終止
+5. Effectiveness(有效性)：人可以用紙和筆追蹤／執行每一個步驟，即每一個Step is baisc enough to be carried。`當log完成，你如何確定它是正確的`
+
+
+
+
+
 
 
 
@@ -149,5 +183,4 @@ keyword = ["資料結構"]
 $$
 \frac{n*k-(n-1)}{n*k} = \frac{nk-n+1}{nk}=\frac{k-1}{k} =0.99
 $$
-
 
