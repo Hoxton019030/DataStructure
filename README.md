@@ -155,14 +155,116 @@ eq. 求n! 求費氏數列
 
    2. Jump to 程式開端執行
 
-2. 若遇到程式結束(END)敘述時`遞迴條件不符合，繼續往下執行，遇到程式的END，要判斷是某一次的遞迴結束，還是整個都結束了`
+2. 若遇到程式結束(END)敘述時`遞迴條件不符合，繼續往下執行，遇到程式的END，要判斷是某一次的遞迴結束，還是整個都結束了。判斷的依據是查看Stack區是否為空，若為空則代表只是一次的遞迴結束，若Stack為空，則代表整個程式結束`
 
    ```c
    if (stack is empty) then 整個結束
        else{
-           pop stack; //取出當時保存的參數或區域變數以及返回位置(return address) then go to "return address"
-           
+           pop stack; //取出當時保存的參數或區域變數以及返回位置(return address) then go to "return address"執行
+           //所謂的return address(返回位址，就是指遞迴結束完後，下一個會執行的程式碼)
        }
+   ```
+
+   例：
+
+   ```c
+   function A(int a){ 
+       int x = 0;
+       int y=0;
+       a++;
+       if(xxx) then A(a); //recursive call
+       else{
+   //do something
+       }
+       x=x+1; (這就是返回位址 (1:)
+   }
+   ```
+
+![image-20230212135153292](https://i.imgur.com/7uzIEQg.png)
+
+
+
+
+
+![image-20230212135446234](https://i.imgur.com/7JDHEkJ.png)
+
+### 考型及來源
+
+考型：
+
+> 1. 給一個Probleam，寫下Recursive algo/code
+> 2. 給Recursive algo/code，要我們追蹤結果 etc...
+
+來源：
+
+> 1. 數學類：階層
+> 2. 往後章節(二元樹的追蹤、圖形的追蹤、排序的追蹤...)
+> 3. 其他
+>
+> > 1. Tower fo Hanoi
+> > 2. permutation printing
+
+
+
+#### 數學類
+
+1. 寫下一個非遞迴的求階層方法
+
+```c
+int fac(int n){
+    if(n==0){
+        return 1;
+    }else // n>0{
+        int S=1;
+    	int i ;
+    	for(i=1;i<=n;i++){
+            S=S*i;
+            return S;
+        }
+    }   
+}
+```
+
+
+
+2. 寫下一個用遞迴處理的求階程式
+
+   ==關鍵點：記下數學遞迴定義式==
+
+   ![image-20230212145854185](https://i.imgur.com/taUXn8C.png)
+
+   ```c
+   int fac(int n){
+       if(n==0){
+           return 1;
+       }else{
+         return n * fac(n-1) ;
+       }
+   }
+   ```
+
+3. 以2的Code為題目
+
+   1. 求Fac(3)
+
+      ![image-20230212145917501](https://i.imgur.com/5TgPcuk.png)
+
+   2. 共呼叫Fac函數?次，含Fac(3)這次`這影響到了時間複雜度，以及會調用幾次pop`
+
+      4次，`Fac(n)共呼叫幾次=n+1次`
+
+4. write a recursive algo for sum(n)= 1+2+...+n, and sum(0)=0;
+
+   ![image-20230212150912005](https://i.imgur.com/7JkNHxN.png)
+
+   ```c
+   int sum(int n){
+       if(n==0){
+           return 0;
+       }else{
+           return n+sum(n-1)
+       }
+   }
    ```
 
    
