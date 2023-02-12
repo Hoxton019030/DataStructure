@@ -64,11 +64,108 @@ keyword = ["資料結構"]
 
 
 
+## Recurtion(遞迴)
+
++ 定義：(以Direct Recursion為例)，Algo/program中含有==**self-calling(自我呼叫)**==敘述存在者，稱之遞迴
+
++ 種類：
+
+  1. Direct：直接遞迴
+  2. Indirect：間接遞迴
+  3. Tail：尾端遞迴
+
++ 分述如下
+
+  1. 直接遞迴：方法中直接呼叫自己
+
+     ```c
+     function A(){
+         // do something
+         if(...) then  A(); //重複自己
+         else{
+         // do something
+         }
+     }
+     ```
+
+  2. 間接遞迴：多個Module之間彼此形成Calling Cycle，
+
+     ```c
+     function  A(){
+         //something
+         Call B(); //相互呼叫
+         //something
+     }
+     
+     function B(){
+         //something
+         Call A(); //相互呼叫
+         //something
+     }
+     ```
+
+  3. 尾端遞迴：是Direct Recustion 之一種，recursive call發生在程式即將結束之前一行
+
+     ```c
+     function A(){
+         //do something
+         if(xxx){} then A() //程式的最後一行 優點是Complier或工程師方便改寫成非遞迴的形式(降低時間複雜度
+     }
+     ```
 
 
 
+**任何problem之解決，必定存在兩種形式之Algo**
+
+1. 遞迴
+2. 非遞迴(Interation)
+
+eq. 求n! 求費氏數列
+
+![image-20230212130259106](https://i.imgur.com/dIbSOTs.png)
 
 
+
+比較圖如下
+
+| Recursion                         | Non-Recursion                            |
+| --------------------------------- | ---------------------------------------- |
+| **程式碼較為精簡**                | 冗長                                     |
+| 較少，或沒有使用區域變數          | 使用到區域變數來保存中間值，Loop控制等等 |
+| **程式碼占的儲存空間**比較少      | 程式碼占用的儲存空間較多                 |
+| 表達力較強(powerful)              | 表達力較弱(weak)                         |
+| ==**執行的時間較久，較沒效率**==  | 執行時間較短，較有效率                   |
+| ==**需要額外的stack space支持**== | 不需要這東西                             |
+
+
+
++ 補充
+
+在complier或程式語言的課程裡面，會**討論如何處理recursion?**
+
+1. 當遇到Recursive call的時候，
+
+   1. 必須先保存當時執行狀況，push這些東西
+
+   > 1. 參數值
+   > 2. 區域/占存 變數值
+   > 3. 返回位址(return address)
+
+   到System **stack**
+
+   2. Jump to 程式開端執行
+
+2. 若遇到程式結束(END)敘述時`遞迴條件不符合，繼續往下執行，遇到程式的END，要判斷是某一次的遞迴結束，還是整個都結束了`
+
+   ```c
+   if (stack is empty) then 整個結束
+       else{
+           pop stack; //取出當時保存的參數或區域變數以及返回位置(return address) then go to "return address"
+           
+       }
+   ```
+
+   
 
 # Ch5 Tree and Binary Tree
 
