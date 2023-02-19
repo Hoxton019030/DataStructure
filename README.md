@@ -285,6 +285,91 @@ int fac(int n){
 
    ​	A. F14 = 377
 
+6. Write a recursive algo/code for Fibonacci 
+
+   1. 遞迴解法
+
+   ```pseudocode
+   int Fib(int n){
+   if(n==0){ return 0;}
+   if(n==1){return 1;}
+   return Fib(n-1)+Fib(n-2);
+   }
+   ```
+
+   2. 非遞迴解法
+
+   ```c
+   int Fib(int n){
+       if (n==0){
+           return 0
+       }else if(n==1){
+           return 1
+       }else{
+           int a =0;
+           int b =1;
+           int c ;
+           int i ;
+           for(i=2;i<n;i++){
+               c= a + b;
+               a =b ;
+               b = c ;
+           }
+           return c;
+       }
+   }
+   ```
+
+   | Fo   | F1   | F2                      | F3                      | ...  |
+   | ---- | ---- | ----------------------- | ----------------------- | ---- |
+   | a=0  | b=1  | c=a+b<br />a=b<br />b=c | c=a+b<br />a=b<br />b=c | ...  |
+
+
+
+
+
+ 3.  依(1)之code，(i)求出Fib(5)之值(ii)呼叫次數?次(iii)Fib(10)的呼叫次數呢?
+
+     ```pseudocode
+     int Fib(int n){
+     if(n==0){ return 0;}
+     if(n==1){return 1;}
+     return Fib(n-1)+Fib(n-2);
+     }
+     ```
+
+     
+
+     ans . 
+
+     (i) 5
+
+     (ii)![image-20230220000219053](https://i.imgur.com/9rkgJtk.png)
+
+     (iii)![image-20230220001353812](https://i.imgur.com/ed9zsLC.png)
+
+     
+
+     
+
+     4. 令T<sub>(n)</sub>代表求Fin(n)時之呼叫次數，即T(0)=T(1)=1次，(i)寫出T(n)之Recursive definition(ii)Based on (i)，求出T(10)之值
+
+        
+
+        ans . (i) T(n) = T(n-1)+T(n-2)+1 且 T(0) =T(1) = 1;
+
+        ​		(ii)
+
+        | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   |
+        | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+        | 1    | 1    | 3    | 5    | 9    | 15   | 25   | 41   | 67   | 109  | 177  |
+
+        
+
+     5. 求Fib(5)時，則Fib(0),Fib(1),Fib(2),Fib(3),Fib(4),Fib(5),分別被呼叫?次
+
+
+
 # Ch5 Tree and Binary Tree
 
 **Tree跟BinaryTree不一樣**
