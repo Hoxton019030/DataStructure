@@ -467,7 +467,7 @@ $$
 (\underset{m}{\overset{n}{{}}})=\{ \begin{aligned}
 & 1, \text{ if } (n = m \text{ or } m = 0) \\
 & 1 = 1
-\end{aligned}
+\end{aligned} = 123
 $$
 
 
