@@ -447,12 +447,18 @@ int fac(int n){
 
 
 ​	
+
+
+
+
+
+
 $$
 (i)write a recursive algo / code 求 (\underset{m}{\overset{n}{{}}})之值
 $$
 
 
-​				ans. 
+
 
 
 
@@ -476,9 +482,6 @@ $$
 \end{aligned}
 $$
 
-$$
-
-$$
 
 # Ch5 Tree and Binary Tree
 
