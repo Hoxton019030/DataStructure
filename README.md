@@ -489,15 +489,23 @@ return Bin(n-1,m)+Bin(n-1,m-1)
 (ii) based on (i) code 求Bin(5,3)之值及呼叫次數
 
 
+
+![image-20230220232145991](https://i.imgur.com/8VKJjX9.png)
+
+
+
+ans 10 ,19次
+
+
+
+Note ：計算時
 $$
-(\underset{3}{\overset{5}{{}}}) 
+(\underset{3}{\overset{5}{{}}}) = \frac{5*4*3}{1*2*3} = 10
 $$
 
-
-
-
-
-
+$$
+(\underset{4}{\overset{8}{{}}}) = \frac{8*7*6*5}{1*2*3*4}=70
+$$
 
 
 
