@@ -527,8 +527,8 @@ $$
 
 $$
 GCD(A,B)=\{ \begin{aligned}
-& B, \text{ if } (A \%B)=0 \\
-&GCD(B,A\%B), other wise
+& B, \text{ if } (A modsB)=0 \\
+&GCD(B,AmodsB), other wise
 \end{aligned}
 $$
 
