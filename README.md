@@ -502,10 +502,14 @@ Note ：計算時
 
 
 $$ {0}
-(\underset{3}{\overset{5}{{}}}) = \frac{5\times4\times3}{1\times2\times3}
+(\underset{3}{\overset{5}{{}}}) = \frac{5\times4\times3}{1\times2\times3}=10
 $$
 
 
+
+$$
+(\underset{4}{\overset{8}{{}}}) = \frac{8\times7\times6\times5}{1\times2\times3\times4}=70
+$$
 
 
 
