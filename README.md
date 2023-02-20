@@ -443,7 +443,10 @@ int fac(int n){
      $$
      {C_m}^n = \frac{n!}{m!(n-m)!}
      $$
-     
+
+
+
+​			(i)write a recursive algo / code 求 
 
 
 
