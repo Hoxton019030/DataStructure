@@ -467,20 +467,15 @@ $$
 
 
 
-$$
-(\underset{m}{\overset{n}{{}}})=1, if(n=m或)
-$$
 
 
 
 
 
-$$
-\{ \begin{aligned}
-& 1, \text{ if } (n = m \text{ or } m = 0) \\
-& 1 = 1
-\end{aligned}
-$$
+
+
+
+
 
 
 # Ch5 Tree and Binary Tree
