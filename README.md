@@ -502,7 +502,7 @@ Note ：計算時
 
 
 $$
-(\underset{3}{\overset{5}{{}}}) = \frac{5*4*3}{1*2*3} = 10
+(\underset{3}{\overset{5}{{}}})
 $$
 
 
