@@ -498,7 +498,7 @@ ans 10 ,19次
 
 
 
-Note ：計算時
+Note ：計算時有些撇步
 
 
 $$
@@ -513,6 +513,23 @@ $$
 
 
 
+
+
+
+ 12.  GCD(A,B) 求A,B兩數之最大公因數，寫出recursive algo/code
+
+      
+
+      ==**☆☆☆☆☆☆☆☆☆要背☆☆☆☆☆☆☆☆☆☆☆☆**==
+      $$
+      GCD(A,B)=\{ \begin{aligned}
+      & B, \text{ if } (A \%B)=0 \\
+      &GCD(B,A\%B), other wise
+      \end{aligned}
+      $$
+      
+
+      
 
 
 
