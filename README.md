@@ -522,20 +522,18 @@ $$
 
       
 
-      
+$$
+GCD(A,B)=\{ \begin{aligned}
+& B, \text{ if } (A \%B)=0 \\
+&GCD(B,A\%B), other wise
+\end{aligned}
+$$
 
-      
 
-      
-      $$
-      GCD(A,B)=\{ \begin{aligned}
-      & B, \text{ if } (A \%B)=0 \\
-      &GCD(B,A\%B), other wise
-      \end{aligned}
-      $$
-      
 
-      
+
+
+
 
 
 
