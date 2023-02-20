@@ -441,7 +441,7 @@ int fac(int n){
      
      
      $$
-     {C_m}^n =(\underset{m}{\overset{n}{{}}})=\frac{n!}{m!(n-m)!}
+     {C_m}^n =(\underset{m}{\overset{n}{{}}})=\frac{n!}{m!(n-m)!} =123
      $$
 
 
