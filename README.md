@@ -502,7 +502,7 @@ Note ：計算時
 
 
 $$ {0}
-(\underset{3}{\overset{5}{{}}}) = (\frac{5*4*3}{1*2*3})
+(\underset{3}{\overset{5}{{}}}) = \frac{5\times4\times3}{1\times2\times3}
 $$
 
 
