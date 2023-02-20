@@ -553,7 +553,7 @@ else return GCD(B,A%B)
 
 依上述code，試求(1)求GCD(18,33)之值(2)呼叫GCD?次
 
- 
+ ![image-20230221000814907](https://i.imgur.com/JkzUfwK.png)
 
 
 
