@@ -460,7 +460,7 @@ $$
 
 
 
-ans.
+ans. 關鍵，==**必背**==
 
 
 $$
@@ -473,8 +473,25 @@ $$
 
 
 
+```pseudocode
+int Bin(int n , int m){
+if(n==m || m==0){return 1}
+else{
+return Bin(n-1,m)+Bin(n-1,m-1)
+}
+}
+```
 
 
+
+
+
+(ii) based on (i) code 求Bin(5,3)之值及呼叫次數
+
+
+$$
+(\underset{3}{\overset{5}{{}}}) 
+$$
 
 
 
