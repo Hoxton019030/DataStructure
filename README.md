@@ -520,7 +520,10 @@ $$
 
       
 
-      
+
+
+
+
 
 $$
 GCD(A,B)=\{ \begin{aligned}
@@ -528,7 +531,6 @@ GCD(A,B)=\{ \begin{aligned}
 &GCD(B,A\%B), other wise
 \end{aligned}
 $$
-
 
 
 
