@@ -441,7 +441,7 @@ int fac(int n){
      
      
      $$
-     {C_m}^n =(\underset{m}{\overset{n}{{}}})=\frac{n!}{m!(n-m)!} =123
+     {C_m}^n =(\underset{m}{\overset{n}{{}}})=\frac{n!}{m!(n-m)!}
      $$
 
 
@@ -466,8 +466,8 @@ ans.
 $$
 (\underset{m}{\overset{n}{{}}})=\{ \begin{aligned}
 & 1, \text{ if } (n = m \text{ or } m = 0) \\
-& 1 = 1
-\end{aligned} = 123
+& (\underset{m}{\overset{n-1}{{}}})+(\underset{m-1}{\overset{n-1}{{}}})
+\end{aligned}
 $$
 
 
