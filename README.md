@@ -501,7 +501,7 @@ ans 10 ,19次
 Note ：計算時
 
 
-$$ {0}
+$$
 (\underset{3}{\overset{5}{{}}}) = \frac{5\times4\times3}{1\times2\times3}=10
 $$
 
