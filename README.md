@@ -531,10 +531,10 @@ $$
 
 
 $$
-GCD(A,B)=\{ \begin{aligned}
+GCD(A,B)=\ \begin{cases}
 & B, \text{ if } (A modsB)=0 \\
 &GCD(B,AmodsB), other wise
-\end{aligned}
+\end{cases}
 $$
 
 
