@@ -524,7 +524,7 @@ $$
 
 
 
-**☆☆☆☆☆☆☆☆☆要背☆☆☆☆☆☆☆☆☆☆☆☆**
+==**☆☆☆☆☆☆☆☆☆要背☆☆☆☆☆☆☆☆☆☆☆☆**==
 
 
 
@@ -539,7 +539,36 @@ $$
 
 
 
+```pseudocode
+int GCD(int A,int B){
+if (A%B==0) {return B}
+else return GCD(B,A%B)
+}
+```
 
+
+
+
+
+依上述code，試求(1)求GCD(18,33)之值(2)呼叫GCD?次
+
+ 
+
+
+
+13. Ackerman's Function
+
+
+
+
+
+$$
+A(m,n) = \begin{cases}
+n+1, & \text{if } m=0\\
+A(m-1,1), & \text{if } n=0\\
+A(m-1,A(m,n-1)), & \text{otherwise}
+\end{cases}
+$$
 
 
 
