@@ -441,14 +441,21 @@ int fac(int n){
      
      
      $$
-     {C_m}^n = \frac{n!}{m!(n-m)!}
+     {C_m}^n =(\underset{m}{\overset{n}{{}}})=\frac{n!}{m!(n-m)!}
      $$
 
 
 
-​			(i)write a recursive algo / code 求 
+​	
+$$
+		(i)write a recursive algo / code 求 (\underset{m}{\overset{n}{{}}})之值
+$$
 
 
+​				ans. 
+$$
+
+$$
 
 # Ch5 Tree and Binary Tree
 
