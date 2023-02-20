@@ -464,7 +464,7 @@ ans. 關鍵，==**必背**==
 
 
 $$
-(\underset{m}{\overset{n}{{}}})=\{
+(\underset{m}{\overset{n}{{}}})=\
 \begin{cases}
 & 1, \text{ if } (n = m \text{ or } m = 0) \\
 & (\underset{m}{\overset{n-1}{{}}})+(\underset{m-1}{\overset{n-1}{{}}})
