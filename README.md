@@ -438,6 +438,8 @@ int fac(int n){
      10. Binomical coe(二項式係數)
      
      ​	
+     
+     
      $$
      {C_m}^n = \frac{n!}{m!(n-m)!}
      $$
