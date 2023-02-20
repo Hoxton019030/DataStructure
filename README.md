@@ -448,11 +448,22 @@ int fac(int n){
 
 ​	
 $$
-		(i)write a recursive algo / code 求 (\underset{m}{\overset{n}{{}}})之值
+(i)write a recursive algo / code 求 (\underset{m}{\overset{n}{{}}})之值
 $$
 
 
 ​				ans. 
+$$
+(\underset{m}{\overset{n}{{}}})=1, if(n=m或)
+$$
+
+$$
+\{ \begin{aligned}
+& 1, \text{ if } (n = m \text{ or } m = 0) \\
+& 1 = 1
+\end{aligned}
+$$
+
 $$
 
 $$
