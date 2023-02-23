@@ -658,6 +658,79 @@ return Exp(x,n-1)*x
 
 
 
+15. 
+
+```c
+int foo(int x, int n){
+    if(n%2==0){
+        f=1;
+    }else{
+        f=x
+    }
+    if(n<2){
+        return f;
+    }
+    return f*foo(x*x, n/2);
+}
+```
+
+(i) 求foo(2,5)值
+
+​	![image-20230223220045068](https://i.imgur.com/GvgDjdH.png)
+
+(ii)求foo(x,n)之功能
+
+​	求x<sup>n</sup>
+
+(iii)求foo(x,n)之Time Complexity
+
+​	O(log<sub>n</sub>) 
+
+
+
+#### 河內塔(Towers of Hanai)
+
+![image-20230223232944377](https://i.imgur.com/dj1RFAh.png)
+
+程式如下：
+
+Hanoi(n,x,y,z);
+
+n：盤數
+
+x：來源
+
+y：占存地
+
+z：目的地
+
+
+
+Step1 Hanoi(n-1,A,C,B);
+
+Step2 Hanoi(1,A,B,C);
+
+Step3 Hanoi(n-1,B,A,C);
+
+
+
+```c++
+void Hanoi(int n,char A,Char B, Char C){
+    if(n==1){
+        printf("move disk %d from %c to %c \n",n,A,C);
+    }else //n>1{
+        Hanoi(n-1,A,C,B);
+        printf("move disk %d from %c \n",n,A,C);
+    	Hanoi(n-1,B,A,C);
+    	
+}
+}
+```
+
+
+
+
+
 
 
 # Ch5 Tree and Binary Tree
