@@ -729,6 +729,34 @@ void Hanoi(int n,char A,Char B, Char C){
 
 
 
+#### Permutation列印
+
+
+
+將[a,b,c]以不同的排列組合印出來
+
+如
+
+abc
+
+acb
+
+bac
+
+bca
+
+cba
+
+cab
+
+有3!=6種寫法
+
+
+
+以遞迴的概念來理解
+
+
+
 
 
 
