@@ -757,9 +757,44 @@ cab
 
 
 
+![image-20230308214715912](https://i.imgur.com/VJL10za.png)
 
 
 
+原始碼的部分
+
+```c++
+void perm(char list[], int i, int n){
+    //產生list[i]~list[n]之排列組合
+    //i≦n
+    if(i==n){ //代表遞迴中止
+        for(j=1;j<=n;j++){
+            printf(list[j]); // for each完後印出當時list的內容
+        }
+    }else{
+        for(j=i;j<=n;j++){
+            swap(list[i],list[j]); // list[j]做頭
+            perm(list,i+1,n); //接(i+1)~(n)之perm
+            swap(list[i],list[j]) // 還原成原本List的內容
+        }
+    }
+}
+```
+
+
+
+實際演練
+
+```c++
+void main(){
+    char list[3] = {a,b,c};
+    Perm(list,1,3);
+}
+```
+
+
+
+![1914A818-E923-4D51-854B-57E4AB2A9C3F](https://i.imgur.com/Eiyo3mb.jpg)
 
 # Ch5 Tree and Binary Tree
 
