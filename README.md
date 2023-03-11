@@ -10,6 +10,8 @@ image = "https://i.imgur.com/NiqSvey.png"
 keyword = ["資料結構"]
 
 +++
+[ToC]
+
 # 學習路線
 
 ## Ch1Algorithm, Recursion and Performance Analysis(space + Time)
@@ -796,6 +798,83 @@ void main(){
 
 ![1914A818-E923-4D51-854B-57E4AB2A9C3F](https://i.imgur.com/Eiyo3mb.jpg)
 
+
+
+
+
+
+
+## Performance Analysis(效能分析)
+
+ 
+
+Algo/code之效能分析，主要分析兩點
+
+1. Space
+2. Time 
+
+
+
+## Space(空間)需求分析
+
+定義：令SP(P)代表Algo/Code P 之空間需求，則SP(P)= **Fixed** Space requirement + **Variable** Space Requirement
+
+
+
+固定(Fixed)空間需求= Instruction (or Code) Space `意即你寫了幾行的程式`+變數+常數空間 =**C**(mean Constant)
+
+變動(Varialbe)空間需求=
+
+主要有兩個來源
+
+1. 若參數為結構型態(Array, Struct)且**採用Call-By-Value參數傳遞方式**(若是用Call-By-Address則也不是變動空間，因為只收一個Address的起始位址而已)
+2. 遞迴(recursion)所需之stack space (堆疊空間)
+
+
+
+因此主要的分析是在變動空間需求這邊
+
+SP(P)= C + SP(i)
+
+
+
+
+
+範例
+
+求SP(i)=?
+
+```c
+rsum(floot list[], int n){
+    if(n!=0){
+        return rsum(list,n-1)+list[n-1]
+    }
+    return list[0]
+}
+// 此外，假設 floot 佔4 bytes, int佔2bytes pointr(address)佔2bytes, List[]採用Call-by-address傳遞
+
+```
+
+Ans.SP(i)= Stack Space for recursion
+
+如何計算?
+
++ 每發生一次遞迴的呼叫(recusive call)，我們需要將
+
+  + 參數值 `list[] 佔2byte,因為是call by address。n 佔2bytes`
+
+  + 區域變數值`無`
+
+  + Return Address`一定有，題目說是2Byte`
+
+    **Push 6 byte per recursive call**
+
+    又共發生**n**次recursive call(不含rsum(list,n))
+
+
+
+因此Sp(i)= 6n bytes
+
 # Ch5 Tree and Binary Tree
 
 **Tree跟BinaryTree不一樣**
@@ -827,6 +906,10 @@ void main(){
 > N個Node所形成的不同B.T Structures ☆☆☆
 >
 > Disjoint Sets定義、表示、應用及Union(i,j) , Find(x)運作
+
+
+
+
 
 
 
