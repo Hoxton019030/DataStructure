@@ -935,11 +935,25 @@ T(P)= 指令執行次數之統計= 2n+1+1(每行被執行了幾次)=2n+2次
 | for(i=1;i≦n;i++) | 4    | n+1       | 4n+4  |
 | {a=a+b}          | 2    | n         | 2n    |
 | return a         | 1    | 1         | 1     |
-|                  |      |           | 6n+4  |
+|                  |      |           | 6n+5  |
 
 
 
  利用S/E (Steps per Execution`每執行一次要花幾步，開心要怎麼定就怎麼定`)區別指令難易程度 S/E高，代表較難
+
+
+
+## 研究所的Time分析考型
+
+1. 計算某行指令執行次數
+
+2. Asymptotic`漸進式` Notations`符號`定義、大小、定理
+
+   (O,Ω,θ,o,w)
+
+3. Recursive time function遞迴時間函數計算/求解 (eq. Honai Tower:T(n)+2*T(n-1)+1)
+
+4. 給一遞迴演算法Recursive algo/code寫出Time Function求解
 
 # Ch5 Tree and Binary Tree
 
