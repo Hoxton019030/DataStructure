@@ -875,6 +875,72 @@ Ans.SP(i)= Stack Space for recursion
 
 因此Sp(i)= 6n bytes
 
+
+
+## Time(時間)需求分析
+
+定義：令T(P)代表Algo,code P之時間需求，則T(P)=Development time(開發時間) + Execution Time 
+
+只注重/討論 Execution Time分析in DS/Algo課程
+
+Execution Time之評量有兩個方法
+
+1. Measurement(實際量度)
+2. **Analysis**(分析、預估)\
+
+本課程是採用Analysis方式，Analysis是以Algo/Code的指令執行總次數，作為分析Time之基礎
+
+
+
+範例1. 不考慮指令之難易度
+
+eq. 整數除法 a/b，浮點數除法 a/b視為一樣
+
+
+
+原始code如下：
+
+```c
+for(i=1i≦n;i++){
+    a = a + b;
+}
+return a;
+```
+
+Then, 宣告一個Global變數，Count=0，在適當處加入Count++之敘述
+
+```c
+for(i=1i≦n;i++){
+    count++; //用來統計for做幾次
+    a = a + b;
+    count++ //統計 a=a+b做幾次
+}
+count ++;// for最後失敗的那一次，跳出for迴圈，實際上還是有做，因此要補上
+conut++; //用來統計下面的return
+return a;
+```
+
+
+
+T(P)= 指令執行次數之統計= 2n+1+1(每行被執行了幾次)=2n+2次
+
+
+
+範例2. 考慮指令之難易程度
+
+
+
+| Source Code      | S/E  | Frequency | Total |
+| ---------------- | ---- | --------- | ----- |
+| for(i=1;i≦n;i++) | 4    | n+1       | 4n+4  |
+| {a=a+b}          | 2    | n         | 2n    |
+| return a         | 1    | 1         | 1     |
+|                  |      |           | 6n+4  |
+
+
+
+ 利用S/E (Steps per Execution`每執行一次要花幾步，開心要怎麼定就怎麼定`)區別指令難易程度 S/E高，代表較難
+
 # Ch5 Tree and Binary Tree
 
 **Tree跟BinaryTree不一樣**
