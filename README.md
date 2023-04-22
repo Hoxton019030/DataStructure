@@ -955,6 +955,79 @@ T(P)= 指令執行次數之統計= 2n+1+1(每行被執行了幾次)=2n+2次
 
 4. 給一遞迴演算法Recursive algo/code寫出Time Function求解
 
+
+
+
+
+[006]
+
+## [複習] 數學公式
+
+1. 等差數列
+
+   公式：(首項＋尾項) * 項數 / 2
+
+2. 等比數列
+
+   公式：((最高項)<sup>exp+1</sup>- (最低項))/公比-1
+
+   範例：r<sup>0</sup>+r<sup>1</sup>+r<sup>2</sup>+...+r<sup>n</sup> = (r<sup>n+1</sup>-1) /  r-1 = (r<sup>n+1</sup> -r<sup>0</sup>)/(r-1)
+
+3. 平方和公式：
+
+   公式：(n(n+1)(2n+1))/6
+
+   範例：1<sup>2</sup>+2<sup>2</sup>+3<sup>2</sup>+...+n<sup>2</sup>
+
+4. Σ i<sup>d</sup> 約莫是 n<sup>d+1</sup>的多項式，d ≧之 int
+
+5. Σ 1/i = log n (底數為2) (調和數列)
+
+6. 排列組合 C幾取幾之計算
+
+7. n!之相關式子
+
+   1. n! = 1* 2 * ... n ≦ n * n * n =n<sup>n</sup>
+   2. n! ≧ (n/2) <sup>n/2</sup> (離散)
+   3. Striling's 公式
+   4. n ! ≒ n <sup>n+(1/2)</sup> * e<sup>-n</sup>, e 為自然對數之底
+
+8. Σ i x 2 <sup>i</sup> 解法為
+
+   令S= Σ i x 2 <sup>i</sup>，因此S= 1x2 +2x2 <sup>2</sup> + 3x3<sup>3</sup>+...nx2<sup>n</sup>，兩邊同x2，為
+
+   2S = 1x2<sup>2</sup> +2x2 <sup>3</sup> + 3x3<sup>4</sup>+...nx2<sup>n+1</sup> 
+
+   然後兩邊相減，得出 S = -2<sup>1</sup>-2<sup>2</sup>-2<sup>3</sup>-...-2<sup>n</sup> + n* 2 <sup>n+1</sup>=經過很多推導之後=n*2<sup>n+1</sup>-2<sup>n+1</sup>+2
+
+   ![image-20230422162944363](https://i.imgur.com/IzFs5at.png)
+
+   Note：其他相似型也是如此求法
+
+   ![image-20230422162934574](https://i.imgur.com/FW5KmGA.png)
+
+9. 對數系列(底數預設為2)
+
+   
+
+
+
+
+
+
+
+<span style='color:red'></span>
+
+<u></u>
+
+<sup></sup>
+
+<span style='color:red'></span>
+
+<u></u>
+
+<sup></sup>
+
 # Ch5 Tree and Binary Tree
 
 **Tree跟BinaryTree不一樣**
