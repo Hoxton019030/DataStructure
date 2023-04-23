@@ -1008,15 +1008,205 @@ T(P)= 指令執行次數之統計= 2n+1+1(每行被執行了幾次)=2n+2次
 
 9. 對數系列(底數預設為2)
 
+   ![image-20230422164130892](https://i.imgur.com/SuDvTIq.png)
+
+   ![image-20230422164402270](https://i.imgur.com/nMuKk2l.png)
+
+   ![image-20230422164740452](https://i.imgur.com/jYTm1Fo.png)
+
+   ![image-20230422165056867](https://i.imgur.com/uZrADYQ.png)
+
    
 
+   
+
+## 給Code，求某行指令執行次數或Big-Oh
+
+例１
+
+```pseudocode
+for i = 1 to n do
+	for j = 1 to n do
+		x++;
+
+求x ++ 執行次數
+ans :　ｎ＊ｎ次
+```
+
+
+
+例２
+
+```psu
+for i = 1 to n do
+	for j = 1 to i do
+		x++;
+
+求x ++ 執行次數
+ans :　(1+n)*n/2次
+
+```
+
+
+
+<span style='color:yellow'>針對i++, i--之 Loop，可用級數求解</span>
+
+```ps
+for i = 1 to n do
+	for j = i to n do
+		x++;
+
+求x ++ 執行次數
+ans :　n+(n-1)+(n-2)...+1 = (n+1)n/2
+```
+
+![image-20230422171306799](https://i.imgur.com/P9HN3rX.png)
+
+
+
+
+
+![image-20230422171624148](https://i.imgur.com/ItHy0Kw.png)
+
+​	
+
+<span style='color:yellow;font-size:32px'>太基本，直接跳過</span>
+
+
+
+[007]
+
+
+
+例題一
+
+
+
+```pseudocode
+for i = 1 to n do
+	for j = 1 to n*n
+		if(j%i ==0) then
+			for k = 1 to j do
+				x++
+```
+
+
+
+| i=1                | i=2                         | i=3                           |
+| ------------------ | --------------------------- | ----------------------------- |
+| j=1 to 1           | j=1 to 4                    | j= 1 to 9                     |
+| j % i ==0 when j=1 | j % i == 0 when j = 2 and 4 | j % i ==0 when j = 3 ,6 and 9 |
+| 1次                | 2+4次                       | 3+6+9次                       |
+
+
+
+若i=4時，x會加 4+8+12+16次，也就是4(1+2+3+4)，若i是n時，x會加
+
+
+
+n(1+2+..+n)次 = n((1+n)*n)/2 
+
+![image-20230422231955941](https://i.imgur.com/M2zZgGv.png)
+
+
+
+## Asymptotic Notations 
+
+漸進式符號
+
+目的：表示時間函數之<span style='color:yellow'>成長速率(Growth rate)之等級</span> 
+
+符號種類：
+
+1. Big-Oh：O
+2. Omega：Ω
+3. Theta：θ
+4. Little-Oh：o
+5. Little-Omega：ω
+
+
+
+## Big-Oh
+
+定義：F(n)= O(g(n)) iff`(若且為若)` exitst two postitive constatnts C and N0 such that f(n)≦ C* g(n)，對所有n≧N0
+
+Note：Big-Oh代表理論之上限值(upper-Bound)
+
+
+
+
+
+例：f(n)=5n<sup>2</sup>+8n-3，則f(n) = O(n<sup>2</sup>)
+
+proof：<span style='color:yellow'>可找到兩個正常數，C=6,N0=8，使得5n<sup>2</sup>+8n-3≦C*n<sup>2</sup></span>，所以f(n) = O(n<sup>2</sup>)
+
+解法如下，通常會先取最大次項的項數，將他+1
+
+![image-20230423000037106](https://i.imgur.com/uckRsKC.png)
+
+
+
+例：f(n) = 3n<sup>2</sup>+8，則f(n)=O(n)是錯的
+
+![image-20230423115002262](https://i.imgur.com/7wTxgD1.png)
+
+
+
+
+
+<span style='color:yellow'>例：log(n!) = O (nLogn) ☆☆☆☆</span>
+
+ans
+
+![image-20230423120053961](https://i.imgur.com/COCV1GI.png)
+
+
+
+<span style='color:yellow'>例</span>
+
+![image-20230423123121376](https://i.imgur.com/ODQ2Db1.png)
+
+
+
+
+
+例：
+
+```pseudocode
+for (i=1;i<=n;i++)
+	for(j=1; j<=i; j*=2)
+		x++;
+```
+
+求此Code之Time=O(?)
+
+![image-20230423125327318](https://i.imgur.com/drPI5Oh.png)
+
+
+
+
+
+## 比較Growth rate等級之大小
+
+
+
+### 例１基本型
+
+Growth rate：小  ---> 大
 
 
 
 
 
 
-<span style='color:red'></span>
+
+
+
+
+
+
+
+<span style='color:yellow'></span>
 
 <u></u>
 
