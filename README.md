@@ -1008,6 +1008,8 @@ T(P)= 指令執行次數之統計= 2n+1+1(每行被執行了幾次)=2n+2次
 
 9. 對數系列(底數預設為2)
 
+   ![image-20230424225728499](https://i.imgur.com/SWCurg3.png)
+
    ![image-20230422164130892](https://i.imgur.com/SuDvTIq.png)
 
    ![image-20230422164402270](https://i.imgur.com/nMuKk2l.png)
@@ -1019,6 +1021,7 @@ T(P)= 指令執行次數之統計= 2n+1+1(每行被執行了幾次)=2n+2次
    
 
    
+
 
 ## 給Code，求某行指令執行次數或Big-Oh
 
@@ -1190,19 +1193,45 @@ for (i=1;i<=n;i++)
 
 
 
-### 例１基本型
+### 例１：基本型
 
 Growth rate：小  ---> 大
 
+![DB4B4E61-ACB1-4F58-8C3C-D94677DE7245](https://i.imgur.com/Yzd1ovw.jpg)
+
+
+
+### 例2：複雜型，請參閱課本
+
+[007 1:24:00]
+
+![image-20230423162117827](https://i.imgur.com/Y8PH2iI.png)
+
+
+
+![image-20230423163630068](https://i.imgur.com/85DpOvR.png)
 
 
 
 
 
+[008]
+
+例題：
+
+![FAED04D9-F436-461C-A483-6A3CBDFA0D98](https://i.imgur.com/Z024vlN.jpg)
 
 
 
+例題：
 
+![C965C8BB-F7B7-4E1B-AEF3-7F823DDECE9C](https://i.imgur.com/3KVL7aZ.jpg)
+
+
+
+例三
+
+![F72EDF02-DD51-4AB7-9028-5383349D5350](E:\Line image\F72EDF02-DD51-4AB7-9028-5383349D5350.jpg)
 
 
 
