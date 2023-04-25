@@ -1231,7 +1231,29 @@ Growth rate：小  ---> 大
 
 例三
 
-![F72EDF02-DD51-4AB7-9028-5383349D5350](E:\Line image\F72EDF02-DD51-4AB7-9028-5383349D5350.jpg)
+![F72EDF02-DD51-4AB7-9028-5383349D5350](https://i.imgur.com/tl5TJJa.jpg)
+
+
+
+
+
+## Omega Ω
+
+定義：f(n)=Ω(g(n) iff exists two positive constants C and no. such that f(n)≧ c.g(n)，對所有大於N0的n而言
+
+Note：Ω視為理論之下限值(low-bound)
+
+
+
+例題：
+
+![image-20230425222040787](https://i.imgur.com/MdsuGk5.png)
+
+
+
+例題
+
+![image-20230425223102662](https://i.imgur.com/1rloQWg.png)
 
 
 
