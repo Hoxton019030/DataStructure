@@ -1231,7 +1231,7 @@ Growth rate：小  ---> 大
 
 例三
 
-![F72EDF02-DD51-4AB7-9028-5383349D5350](E:\Line image\F72EDF02-DD51-4AB7-9028-5383349D5350.jpg)
+![F72EDF02-DD51-4AB7-9028-5383349D5350](https://i.imgur.com/7DnWuqR.jpg)
 
 
 
