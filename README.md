@@ -1257,6 +1257,43 @@ Note：Ω視為理論之下限值(low-bound)
 
 
 
+## Theta θ
+
+一個夾擊
+
+定義：f(n) = θ(g(n)) if exists <span style='color:yellow'>three</span> positive
+
+Constants：<span style='color:yellow'>C1, C2, and N0</span>
+
+<span style='color:yellow'>Such That C1.g(n) ≦ f(n) ≦ C2.g(n), </span>對所有的
+
+Note：
+
+1. θ is more precise than O and  Ω
+2. f(n) = <span style='color:yellow'>θ (n)</span>
+3. f(n) = O(g(n)) and f(n) = Ω(g(n))
+
+
+
+
+
+## 相關性質/關係
+
+1. 反身性(Reflexive)：自己與自己之間的關係
+
+   + f(n)=O(f(n))。f(n)≦1*f(n), ∀ n≧n0
+   + f(n)=Ω(f(n))。
+   + f(n)=θ(f(n))。
+
+   這三者皆滿足反身性
+
+   + f(n)=o(f(n)) 不成立，自己絕對不小於自己
+   + f(n)=ω(f(n)) 不成立，自己也不大於自己
+
+   這兩者不滿足反身性
+
+
+
 <span style='color:yellow'></span>
 
 <u></u>
