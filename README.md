@@ -1131,6 +1131,8 @@ n(1+2+..+n)次 = n((1+n)*n)/2
 
 ## Big-Oh
 
+小於等於
+
 定義：F(n)= O(g(n)) iff`(若且為若)` exitst two postitive constatnts C and N0 such that f(n)≦ C* g(n)，對所有n≧N0
 
 Note：Big-Oh代表理論之上限值(upper-Bound)
@@ -1239,7 +1241,13 @@ Growth rate：小  ---> 大
 
 ## Omega Ω
 
+<<<<<<< HEAD
 定義：f(n)=Ω(g(n)) iff exists two positive constants C and no. such that f(n)≧ c.g(n)，對所有大於N0的n而言
+=======
+大於等於
+
+定義：f(n)=Ω(g(n) iff exists two positive constants C and no. such that f(n)≧ c.g(n)，對所有大於N0的n而言
+>>>>>>> c012a0f61d58957818c546549c6800331b623e25
 
 Note：Ω視為理論之下限值(low-bound)
 
@@ -1257,6 +1265,7 @@ Note：Ω視為理論之下限值(low-bound)
 
 
 
+<<<<<<< HEAD
 
 
 Theta：θ
@@ -1281,11 +1290,31 @@ Note：
 例：
 
 ![image-20230427002552546](https://i.imgur.com/UaMvgKW.png)
+=======
+## Theta θ
+
+等於
+
+一個夾擊
+
+定義：f(n) = θ(g(n)) if exists <span style='color:yellow'>three</span> positive
+
+Constants：<span style='color:yellow'>C1, C2, and N0</span>
+
+<span style='color:yellow'>Such That C1.g(n) ≦ f(n) ≦ C2.g(n), </span>對所有的
+
+Note：
+
+1. θ is more precise than O and  Ω
+2. f(n) = <span style='color:yellow'>θ (n)</span>
+3. f(n) = O(g(n)) and f(n) = Ω(g(n))
+>>>>>>> c012a0f61d58957818c546549c6800331b623e25
 
 
 
 
 
+<<<<<<< HEAD
 ## Little-Oh：o
 
 > 哲學意義在於絕對小於
@@ -1311,6 +1340,32 @@ Note：
 ![image-20230427005653632](https://i.imgur.com/qJTJRGx.png)
 
 
+=======
+o 就像小於
+
+w 就像大於
+
+## 相關性質/關係
+
+1. 反身性(Reflexive)：自己與自己之間的關係
+
+   + f(n)=O(f(n))。f(n)≦1*f(n), ∀ n≧n0
+   + f(n)=Ω(f(n))。
+   + f(n)=θ(f(n))。
+
+   這三者皆滿足反身性
+
+   + f(n)=o(f(n)) 不成立，自己絕對不小於自己
+   + f(n)=ω(f(n)) 不成立，自己也不大於自己
+
+   這兩者不滿足反身性
+
+2. 遞移性(Transitive)：若a R b, b R c, 則 a R c 也成立
+
+   O, Ω. θ ,o, ω皆滿足遞移性
+
+   + f(n)=O(g(n))且g(n)=O(h(n))，則f(n)=O(h(n))
+>>>>>>> c012a0f61d58957818c546549c6800331b623e25
 
 <span style='color:yellow'></span>
 
