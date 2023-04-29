@@ -1231,7 +1231,84 @@ Growth rate：小  ---> 大
 
 例三
 
-![F72EDF02-DD51-4AB7-9028-5383349D5350](https://i.imgur.com/7DnWuqR.jpg)
+![F72EDF02-DD51-4AB7-9028-5383349D5350](https://i.imgur.com/tl5TJJa.jpg)
+
+
+
+
+
+## Omega Ω
+
+定義：f(n)=Ω(g(n)) iff exists two positive constants C and no. such that f(n)≧ c.g(n)，對所有大於N0的n而言
+
+Note：Ω視為理論之下限值(low-bound)
+
+
+
+例題：
+
+![image-20230425222040787](https://i.imgur.com/MdsuGk5.png)
+
+
+
+例題
+
+![image-20230425223102662](https://i.imgur.com/1rloQWg.png)
+
+
+
+
+
+Theta：θ
+
+
+
+定義：f(n)= θ (g(n)) iff exists <span style='color:yellow'>three</span> positive constrants <span style='color:yellow'>C1, C2, and N0</span>, such that，<span style='color:yellow'>C1*g(n) ≦ f(n) ≦C2\*g(n)，對所有大於n0的n而言。</span>
+
+Note：
+
+1. θ is more <span style='color:yellow'>precise</span> than O and Ω
+2. f(n) = θ(n) <=> f(n) = O(g(n)) and f(n) = Ω(g　(n))
+
+
+
+例：
+
+![image-20230427002152181](https://i.imgur.com/6fAUJIr.png)
+
+
+
+例：
+
+![image-20230427002552546](https://i.imgur.com/UaMvgKW.png)
+
+
+
+
+
+## Little-Oh：o
+
+> 哲學意義在於絕對小於
+
+定義：f(n) = o (g(n)) iff 對於所有的C，存在n0，且C為正常數，使得f(n) ≦ C*g(n)，對於所有的n0皆大於n
+
+
+
+大部分都考是非題
+
+例：
+
+![image-20230427004044210](https://i.imgur.com/znyS9FE.png)
+
+
+
+## Little-Omega：ω
+
+> 哲學意義在於絕對大於
+
+定義：f(n) = ω (g(n)) iff 對於所有的C，存在n0，且C為正常數，使得f(n) > C*g(n)，對於所有的n0皆大於n
+
+![image-20230427005653632](https://i.imgur.com/qJTJRGx.png)
 
 
 
