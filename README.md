@@ -1360,7 +1360,29 @@ w 就像大於
 
 ## 綜合練習
 
-1. T
+[009 00:40:00]
+
+
+
+例題一：
+
+![image-20230430160922704](https://i.imgur.com/MzdjnDC.jpg)
+
+
+
+例題二：下列哪些是polynomial-Bounded(≦多項式時間等級)?
+
+![6FDB9D79-A067-43BB-AB9F-A7115084C4BB](https://i.imgur.com/qhPDIzi.jpg)
+
+
+
+
+
+例題３
+
+![3100F4A8-BB07-4D2F-BFBC-71D7C4C283CC](https://i.imgur.com/4nWNymw.jpg)
+
+
 
 
 
