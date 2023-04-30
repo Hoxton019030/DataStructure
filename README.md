@@ -1241,13 +1241,9 @@ Growth rate：小  ---> 大
 
 ## Omega Ω
 
-<<<<<<< HEAD
-定義：f(n)=Ω(g(n)) iff exists two positive constants C and no. such that f(n)≧ c.g(n)，對所有大於N0的n而言
-=======
 大於等於
 
 定義：f(n)=Ω(g(n) iff exists two positive constants C and no. such that f(n)≧ c.g(n)，對所有大於N0的n而言
->>>>>>> c012a0f61d58957818c546549c6800331b623e25
 
 Note：Ω視為理論之下限值(low-bound)
 
@@ -1265,10 +1261,8 @@ Note：Ω視為理論之下限值(low-bound)
 
 
 
-<<<<<<< HEAD
 
-
-Theta：θ
+## Theta θ
 
 
 
@@ -1277,7 +1271,8 @@ Theta：θ
 Note：
 
 1. θ is more <span style='color:yellow'>precise</span> than O and Ω
-2. f(n) = θ(n) <=> f(n) = O(g(n)) and f(n) = Ω(g　(n))
+2. f(n) = <span style='color:yellow'>θ (n)</span>
+3. f(n) = O(g(n)) and f(n) = Ω(g(n))
 
 
 
@@ -1290,34 +1285,17 @@ Note：
 例：
 
 ![image-20230427002552546](https://i.imgur.com/UaMvgKW.png)
-=======
-## Theta θ
-
-等於
-
-一個夾擊
-
-定義：f(n) = θ(g(n)) if exists <span style='color:yellow'>three</span> positive
-
-Constants：<span style='color:yellow'>C1, C2, and N0</span>
-
-<span style='color:yellow'>Such That C1.g(n) ≦ f(n) ≦ C2.g(n), </span>對所有的
-
-Note：
-
-1. θ is more precise than O and  Ω
-2. f(n) = <span style='color:yellow'>θ (n)</span>
-3. f(n) = O(g(n)) and f(n) = Ω(g(n))
->>>>>>> c012a0f61d58957818c546549c6800331b623e25
 
 
 
 
 
-<<<<<<< HEAD
 ## Little-Oh：o
 
+
 > 哲學意義在於絕對小於
+
+o 就像小於
 
 定義：f(n) = o (g(n)) iff 對於所有的C，存在n0，且C為正常數，使得f(n) ≦ C*g(n)，對於所有的n0皆大於n
 
@@ -1335,15 +1313,14 @@ Note：
 
 > 哲學意義在於絕對大於
 
+w 就像大於
+
 定義：f(n) = ω (g(n)) iff 對於所有的C，存在n0，且C為正常數，使得f(n) > C*g(n)，對於所有的n0皆大於n
 
 ![image-20230427005653632](https://i.imgur.com/qJTJRGx.png)
 
 
-=======
-o 就像小於
 
-w 就像大於
 
 ## 相關性質/關係
 
@@ -1365,7 +1342,27 @@ w 就像大於
    O, Ω. θ ,o, ω皆滿足遞移性
 
    + f(n)=O(g(n))且g(n)=O(h(n))，則f(n)=O(h(n))
->>>>>>> c012a0f61d58957818c546549c6800331b623e25
+
+3. 對稱性(Symmetric)：若aＲb成立，則bＲa也成立
+
+   + <span style='color:yellow'>只有θ滿足這個性質(==)</span>，其他均不滿足。
+   + 即<span style='color:yellow'>f(n)=θ(g(n))成立，則g(n)=θ(f(n))也會成立</span>
+
+4. 反對稱性(Asymmetric)：
+
+   + 若f(n)=O(g(n))，則g(n)=Ω(f(n))為True 
+
+     > f(n)≦c*g(n) => g(n)≧1/c\*f(n)
+
+   + 若f(n)=o(g(n))，則g(n)=ω(f(n))為True
+
+
+
+## 綜合練習
+
+1. T
+
+
 
 <span style='color:yellow'></span>
 
