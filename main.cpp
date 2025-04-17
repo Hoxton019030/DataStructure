@@ -1,6 +1,9 @@
 #include <iostream>
+#include "BinaryTree.h"
+#include "TreeNode.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+
+    BinaryTree *binaryTree=new BinaryTree();
+    binaryTree
 }
