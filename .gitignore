@@ -1,0 +1,33 @@
+# 編譯檔案
+cmake-build-*/
+build/
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+
+# CLion 設定檔
+.idea/
+*.iml
+
+# CMake 檔案
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# log 檔 & 暫存檔
+*.log
+*.tmp
+*.swp
+*.swo
+
+# MacOS 系統檔案（如果你是用 mac）
+.DS_Store
+
+# Windows 系統檔案（如果你是用 Windows）
+Thumbs.db
+desktop.ini
