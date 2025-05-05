@@ -16,3 +16,8 @@ void BinaryTree::insertNode(TreeNode *node, int number) {
 
 }
 
+void BinaryTree::preOrder(TreeNode *rootNode) {
+
+
+}
+

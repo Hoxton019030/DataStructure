@@ -12,6 +12,7 @@ public:
 
     BinaryTree();
     void insertNode(int number);
+    void preOrder(TreeNode* rootNode);
 
 private:
     TreeNode *rootNode;
