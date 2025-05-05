@@ -8,4 +8,6 @@ add_executable(data_struct main.cpp
         TreeNode.h
         BinaryTree.cpp
         BinaryTree.h
+        Person.cpp
+        Person.h
 )

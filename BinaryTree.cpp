@@ -4,10 +4,15 @@
 
 #include "BinaryTree.h"
 
+BinaryTree::BinaryTree() {
+    rootNode = nullptr;
+}
+
 void BinaryTree::insertNode(int number) {
-    if(rootNode == nullptr){
+    insertNode(rootNode,number);
+}
 
-    }
-
+void BinaryTree::insertNode(TreeNode *node, int number) {
 
 }
+

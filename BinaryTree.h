@@ -9,10 +9,13 @@
 
 class BinaryTree {
 public:
-    TreeNode *rootNode;
+
+    BinaryTree();
+    void insertNode(int number);
 
 private:
-    void insertNode(int number);
+    TreeNode *rootNode;
+    void insertNode(TreeNode* node, int number);
 };
 
 
